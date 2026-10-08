@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul_mas_claro"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="410dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
+
+    <ImageButton
+        android:id="@+id/btnAdd"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/azul_oscuro"
+        android:foregroundTintMode="screen"
+        app:layout_constraintBottom_toBottomOf="@+id/btnOrdenarNivel"
+        app:layout_constraintEnd_toStartOf="@+id/botonSMS"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnOrdenarNivel"
+        app:layout_constraintTop_toTopOf="@+id/btnOrdenarNivel"
+        app:srcCompat="@android:drawable/ic_menu_add" />
+
+    <ImageButton
+        android:id="@+id/botonSMS"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/azul_oscuro"
+        android:foregroundTintMode="screen"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAdd"
+        app:layout_constraintEnd_toStartOf="@+id/btnBuscar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnAdd"
+        app:layout_constraintTop_toTopOf="@+id/btnAdd"
+        app:srcCompat="@drawable/ic_baseline_sms_24" />
+
+    <ImageButton
+        android:id="@+id/btnBuscar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/azul_oscuro"
+        android:foregroundTintMode="screen"
+        app:layout_constraintBottom_toBottomOf="@+id/botonSMS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botonSMS"
+        app:layout_constraintTop_toTopOf="@+id/botonSMS"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
+    <ToggleButton
+        android:id="@+id/btnOrdenarNivel"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/azul_oscuro"
+        android:buttonTint="#F40000"
+        android:drawableTop="@drawable/ic_baseline_sort_24"
+        android:foregroundTintMode="screen"
+        android:textOff=" "
+        android:textOn=" "
+        app:layout_constraintEnd_toStartOf="@+id/btnAdd"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
